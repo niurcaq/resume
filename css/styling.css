@@ -1,0 +1,13 @@
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    /* tablet view */
+}
+
+@media screen and (min-width: 900px) {
+    /* desktop view */
+}
