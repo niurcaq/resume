@@ -1,1 +1,1 @@
-# resume
+# Hello, my name is Niurca Quirarte and this is my portfolio. Enjoy :)

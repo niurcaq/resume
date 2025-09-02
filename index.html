@@ -4,21 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/styling.css">
-    <title>Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="gif/x-icon" href="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTR1N2h1YTczbzR6bzl0eDQ5amE3YnRmNDhkeWt1d3R3eWZ1ajBsdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ru00axlTLzs2gNAVms/giphy.gif">
+    <script src="js/nav.js"></script>
+    <title>Niurca Quirarte Portfolio</title>
 </head>
 <body>
-    <a href = "#main" class="skip">Skip to Main Content</a>
     <header>
         <nav>
-
+            <a href = "index.html">About</a>
+            <a href = "experience.html">Experience</a>
+            <a href = "projects.html">Projects</a>
         </nav>
     </header>
-    <main id="main">
-        <h1>Niurca Quirarte</h1>
+    <main>
+        <!-- img of me on the left centered -->
+        <!-- about section on the right centered -->
+        <!-- links/buttons centered below img and about section -->
+        <!--    ----------------------------------    -->
+        <!--    |      img       |     about     |    -->
+        <!--    |                |               |    -->
+        <!--    ----------------------------------    -->
+        <!--    |             links              |    -->
+        <!--    ----------------------------------    -->
+
+
+
+        <div class="whole">
+            <img src="images/me.jpg" alt="Picture of Niurca Quirarte">
+
+            <div class="ab">
+                <h1>Niurca Quirarte</h1>
+                <p>
+                    Computer Science Student at UMICH
+                </p>
+            </div>
+
+            <div class="links">
+                <button type="button" class="btn" onclick="linkedin()">
+                    <img src="./img/linkedin.svg" alt="LinkedIn" class="icon-img">
+                </button>
+                <button type="button" class="btn" onclick="github()">
+                    <img src="./img/github.svg" alt="Github" class="icon-img">
+                </button>
+                <button type="button" class="btn">
+                    <!-- maybe ask them what role they're interested in to select the appropriate resume -->
+                    <!-- roll out options: software, UX design, embedded, leadership, long resume -->
+                    <!-- download resume -->
+                    Download Resume
+                </button>
+                <button type="button" class="btn" onclick="listOpt()">
+                    Contact Me
+                </button>
+                <div>
+                    <ul id="contact" class="listHide">
+                        <li>Email: niurcaq@umich.edu</li>
+                        <li>Phone: (312) 351-2837</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
     </main>
     <footer>
-        <p>Niurca Quirarte Resume &copy;</p>
+        <p>Niurca Quirarte Portfolio &copy;</p>
     </footer>
 </body>
 </html>
