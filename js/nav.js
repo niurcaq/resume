@@ -5,3 +5,9 @@ function linkedin() {
 function github() {
     window.open("https://github.com/niurcaq", "_blank");
 }
+
+function listOpt() {
+  const menu = document.getElementById("contact");
+  menu.classList.toggle("show");
+  menu.classList.toggle("hide");
+}

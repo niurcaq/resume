@@ -130,3 +130,37 @@ button {
   background-color: #0A66C2; /* same as border */
   color: white; /* text color changes on fill */
 }
+
+.list {
+  margin-top: 0.5rem;
+  padding: 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  position: absolute;
+  z-index: 100;
+}
+
+.list li {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+/* Hide by default */
+.hide {
+  display: none;
+}
+
+/* Show when toggled */
+.show {
+  display: block;
+}
