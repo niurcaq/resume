@@ -166,9 +166,50 @@ h1:hover {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     line-height: 1.6;
+    text-align: left;
+    /* margin: 0 auto; */
+    max-width: 700px;
+    border: 2px solid rgb(17, 183, 17);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(32, 31, 31);
+    /* border-left: 4px solid rgb(17, 183, 17);
+    padding-left: 10px; */
+}
+
+.emp {
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    color: rgb(17, 183, 17);
+}
+
+.ab p {
+    max-width: 60ch;
+    padding: 15px;
+    border: 2px solid rgb(17, 183, 17);
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+#next-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: rgb(17, 183, 17);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+    display: block;
+    margin-left: auto;
+}
+
+#next-btn:hover {
+    background: rgb(14, 150, 14);
 }
 
 /* h1 {
@@ -249,3 +290,4 @@ p {
 .flip:hover .back {
     transform: rotateY(0deg);
 }
+
