@@ -51,3 +51,33 @@ nextBtn.addEventListener("click", () => {
   index = (index + 1) % bios.length;
   bioText.innerHTML = bios[index]; // use innerHTML since text contains <br> and spans
 });
+
+/* Copy to clipboard functionality */
+document.querySelectorAll(".copy-btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation(); // prevent menu from closing
+    const textToCopy = btn.getAttribute("data-copy");
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      // Show visual feedback
+      const originalSvg = btn.innerHTML;
+      btn.innerHTML = "✓";
+      btn.style.color = "rgb(14, 150, 14)";
+      setTimeout(() => {
+        btn.innerHTML = originalSvg;
+        btn.style.color = "rgb(17, 183, 17)";
+      }, 1500);
+    }).catch(() => {
+      alert("Failed to copy to clipboard");
+    });
+  });
+});
+
+/* Download resume functionality */
+function downloadResume() {
+  const link = document.createElement("a");
+  link.href = "./files/NiurcaQuirarteResume.pdf";
+  link.download = "NiurcaQuirarteResume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}

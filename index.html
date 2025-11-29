@@ -76,33 +76,42 @@
                 <button id="next-btn">Next</button>
             </div>
         </div>
-        <div class="links">
-            <button type="button" class="btn" onclick="linkedin()">
-                <img src="./img/linkedin.svg" alt="LinkedIn" class="icon-img">
-            </button>
-            <button type="button" class="btn" onclick="github()">
-                <img src="./img/github.svg" alt="Github" class="icon-img">
-            </button>
-            <button type="button" class="btn" onclick="listOpt()">
-                Contact Me
-            </button>
-            <div>
-                <ul id="contact" class="list hide">
-                    <li>niurcaq@umich.edu</li>
-                    <li>(312) 351-2837</li>
-                </ul>
+            <div class="links-row">
+                    <button type="button" class="btn" onclick="linkedin()">
+                        <img src="./img/linkedin.svg" alt="LinkedIn" class="icon-img">
+                    </button>
+                    <button type="button" class="btn" onclick="github()">
+                        <img src="./img/github.svg" alt="Github" class="icon-img">
+                    </button>
+                    <div class="contact-wrapper">
+                        <button type="button" class="btn" onclick="listOpt()">
+                            Contact Me
+                        </button>
+                        <ul id="contact" class="list hide">
+                        <li>
+                            <span>niurcaq@umich.edu</span>
+                            <button class="copy-btn" data-copy="niurcaq@umich.edu" aria-label="Copy email">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <span>(312) 351-2837</span>
+                            <button class="copy-btn" data-copy="(312) 351-2837" aria-label="Copy phone number">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                    </div>
+                    <button type="button" class="btn btn-download" onclick="downloadResume()">
+                        Download Resume
+                    </button>
             </div>
-        </div>
-        <button type="button" class="btn">
-            <!-- instead of dropdown list, do a browse resume. do specific role 
-            and they can click left or right arrows to selecte it. it will be an overlay
-            with specific role & u can choose which one and clicking it will open it and
-            you'll have a download button -->
-            <!-- maybe ask them what role they're interested in to select the appropriate resume -->
-            <!-- roll out options: software, UX design, embedded, leadership, long resume -->
-            <!-- download resume -->
-            Download Resume
-        </button>
     </main>
     <footer>
         <p>Niurca Quirarte Portfolio &copy;</p>
